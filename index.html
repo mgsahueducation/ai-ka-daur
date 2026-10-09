@@ -26,3 +26,108 @@
       --ink: #f1e9dc;
       --muted: #a39786;
       --accent: #e08a5b;
+      --rule: #342d24;
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Noto Nastaliq Urdu", "Jameel Noori Nastaleeq", serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 48px 20px 64px;
+  }
+  main { width: 100%; max-width: 560px; text-align: center; }
+  h1 {
+    font-size: clamp(2rem, 7vw, 2.8rem);
+    color: var(--accent);
+    margin: 0 0 8px;
+    line-height: 1.8;
+  }
+  .author {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    margin: 0 0 20px;
+  }
+  .author img {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--accent);
+    background: var(--rule);
+  }
+  .author span {
+    font-size: 1.1rem;
+    color: var(--muted);
+    line-height: 2;
+  }
+  .author strong { color: var(--ink); font-weight: 700; }
+  .rule {
+    width: 64px;
+    height: 2px;
+    background: var(--rule);
+    margin: 0 auto 36px;
+    border: 0;
+  }
+  .stanza { margin: 0 0 40px; }
+  .stanza p {
+    margin: 0;
+    font-size: clamp(1.15rem, 4.2vw, 1.4rem);
+    line-height: 2.5;
+  }
+  .punch p:last-child {
+    color: var(--accent);
+    font-weight: 700;
+  }
+  footer {
+    margin-top: 48px;
+    font-size: 0.85rem;
+    color: var(--muted);
+    line-height: 2;
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>اے آئی کا دور</h1>
+
+  <div class="author">
+    <img src="cover.png" alt="مشتاق احمد ساقی">
+    <span>شاعر: <strong>مشتاق احمد ساقی</strong></span>
+  </div>
+  <hr class="rule">
+
+  <section class="stanza">
+    <p>سب کچھ ہے، بس وقت نہیں،</p>
+    <p>یہ شکوہ ہر طرف عام ہے۔</p>
+    <p>موبائل میں دنیا سما گئی،</p>
+    <p>مگر گھر کا نام گم ہے۔</p>
+  </section>
+
+  <section class="stanza">
+    <p>میٹنگ میں سب خاموش بیٹھے،</p>
+    <p>اسکرین ہی سب کی زبان ہے۔</p>
+    <p>جس دن بجلی چلی جائے،</p>
+    <p>پھر معلوم ہوتا ہے—</p>
+    <p>کمپنی چلتی نہیں،</p>
+    <p>چارجر ہی اصل سلطان ہے۔</p>
+  </section>
+
+  <section class="stanza punch">
+    <p>اے آئی سے پوچھا میں نے،</p>
+    <p>“خوشی کہاں ملے گی؟”</p>
+    <p>بولا: “پہلے نوٹیفکیشن بند کرو،</p>
+    <p>پھر کھڑکی کھول کر خود دیکھو—</p>
+    <p>خوشی انٹرنیٹ سے باہر رہتی ہے!”</p>
+  </section>
+
+  <footer>© مشتاق احمد ساقی · اے آئی کے دور پر ایک طنزیہ نظم</footer>
+</main>
+</body>
+</html>
